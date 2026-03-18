@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autonomous Logistics | Formulir Pendaftaran</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  
+    <nav class="navbar" style="background-color: #000000;" data-bs-theme="light">
+
+  <div class="container-fluid">
+    <span class="navbar-brand mb-0 p-2 h1" style="color: #ffffff;">Autonomous Logistics</span>
+  </div>
+</nav>
+
+
+
+
+  <main class="d-flex align-items-center justify-content-center" style="min-height: calc(100vh - 56px); padding: 20px;">
+    <div class="w-100" style="max-width: 500px;">
+      <div class="card text-bg-dark mb-3" style="opacity: 0.9; font-family: times; font-variant: small-caps;">
+      <div class="card-header" style="font-size: clamp(18px, 5vw, 24px); padding: 20px;" ><b><ins>Formulir Registrasi</ins></b></div>
+          <div class="card-body">
+            <p class="card-text" style="position: relative;">
+              <a href="index.html" target="_self" alt="back" style="position: absolute; top: -60px; right: 10px;">
+                <button type="button" class="btn-close" aria-label="Close"></button>
+              </a>
+              <form class="row g-3" action="landing.php" method="POST">
+                <div class="col-12">
+                  <label for="inputname" class="form-label">Nama Lengkap</label>
+                  <input type="text" class="form-control" id="inputname" placeholder="Raissa Ceva Bernasya" name="nama">
+                </div>
+                <div class="col-12 col-md-6">
+                  <label for="inputEmail" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="inputEmail" placeholder="issa@gmail.com" name="email">
+                </div>
+                <div class="col-12 col-md-6">
+                  <label for="inputPassword" class="form-label">Password</label>
+                  <input type="password" class="form-control" id="inputPassword" placeholder="Cevaraissa123*" name="password">
+                </div>
+                <div class="col-12 col-md-6">
+                  <label for="inputnumber" class="form-label">Jumlah Paket</label>
+                  <input type="number" class="form-control" id="inputnumber" min="1" max="20" placeholder="max. 20" name="jumlah">
+                </div>
+                <div class="col-12 col-md-6">
+                  <label for="inputJangkauan" class="form-label">Jenis Layanan</label>
+                  <select class="form-select" id="inputJangkauan" name="layanan">
+                    <option>Robot Darat</option>
+                    <option>Drone Fixed-Wing</option>
+                    <option>VTOL Kargo Berat</option>
+                  </select>
+                </div>
+                <div class="col-12">
+                  <label for="inputAlamat" class="form-label">Alamat</label>
+                  <input type="text" class="form-control" id="inputAlamat" placeholder="Jl. Babarsari No.10, Tambakbayan, Caturtunggal" name="alamat">
+                </div>
+                <label class="form-check-label col-12">
+                    Skala Prioritas
+                </label>
+                <div class="col-6 col-md-4">
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault1" name="prioritas">
+                    <label class="form-check-label" for="radioDefault1">
+                      Reguler
+                    </label>
+                  </div>
+                </div>
+                <div class="col-6 col-md-4">
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault2" name="prioritas" checked>
+                    <label class="form-check-label" for="radioDefault2">
+                      Express
+                    </label>
+                  </div>
+                </div>
+                <div class="col-6 col-md-4">
+                  <div class="form-check-dark">
+                    <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault3" name="prioritas" checked>
+                    <label class="form-check-label" for="radioDefault3">
+                      Instant
+                    </label>
+                  </div>
+                </div>
+                <div class="col-12" style="display: flex; flex-direction: row; justify-content: space-between; align-items: center; padding-top: 20px; gap: 10px;">
+                <button type="reset" class="btn btn-outline-light flex-grow-1">Reset</button>
+                  <button type="submit" class="btn btn-outline-light flex-grow-1">Submit</button>
+                </div>
+                <div class="col-12">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gps" name="gps">
+                    <label class="form-check-label" for="gps" style="font-size: 11px;">
+                      Persetujuan akses koordinat GPS lokasi rumah/kantor agar paket tidak salah alamat
+                    </label>
+                  </div>
+                </div>
+              </form>
+            </p>
+          </div>
+          </div>
+          </center>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+    
+
+</body>
+</html>

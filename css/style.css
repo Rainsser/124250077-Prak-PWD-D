@@ -1,0 +1,72 @@
+.navbar {
+    font-family: times;
+    font-variant: small-caps;
+    opacity: 0.7;
+    padding: 0.5rem 1rem;
+}
+
+.navbar-brand {
+    font-size: clamp(1.2rem, 4vw, 2rem) !important;
+}
+
+.btn {
+    font-family: times;
+    font-variant: small-caps;
+    font-size: 16px;
+    background-color: black;
+}
+
+body {
+    background-image: url('../assets/Q12_DVT_WBACKROUND_WIP_100225.19.webp');
+    background-color: rgb(32, 32, 34);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+main.centered {
+    min-height: calc(100vh - 56px); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+@media (max-width: 1023px) {
+    body {
+        background-attachment: scroll;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar-brand {
+        font-size: clamp(1rem, 5vw, 1.5rem) !important;
+    }
+    
+    .btn {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 767px) {
+    .navbar {
+        padding: 0.5rem 0.75rem;
+    }
+    
+    .navbar-brand {
+        font-size: 1.1rem !important;
+    }
+    
+    .btn {
+        font-size: 13px;
+        padding: 0.35rem 0.65rem;
+    }
+    
+    body {
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+
